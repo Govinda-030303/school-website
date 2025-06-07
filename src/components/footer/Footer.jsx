@@ -1,0 +1,108 @@
+import React from "react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+
+const socialIcons = [
+  { Icon: Facebook, label: "Facebook" },
+  { Icon: Instagram, label: "Instagram" },
+  { Icon: Linkedin, label: "LinkedIn" },
+  { Icon: Youtube, label: "YouTube" },
+];
+
+const footerLinks = [
+  {
+    title: "About",
+    links: [
+      "About Vidyalaya",
+      "Why Vidyalaya?",
+      "Benefits",
+      "Our Approach",
+      "History",
+    ],
+  },
+  {
+    title: "Product & Services",
+    links: [
+      "Features",
+      "School Software",
+      "College Software",
+      "Integration",
+      "Services",
+      "Mobile App",
+    ],
+  },
+  {
+    title: "Resources",
+    links: ["Brochures", "Presentation", "Case Study", "Refund Policy", "Blog"],
+  },
+];
+
+const Footer = () => {
+  return (
+    <footer className="bg-orange-500 text-white py-10">
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-between gap-8 px-4">
+        {/* About Section */}
+        <div className="flex-1 text-sm">
+          <h2 className="text-xl font-bold mb-4">Vidyalaya</h2>
+          <p className="font-normal">
+            Vidyalaya is a leading ERP solution for educational institutions
+            worldwide, offering SMS, online payment, vehicle tracking, online
+            exams, mobile apps, biometric integration, and more.
+          </p>
+          {/* Social Media Links */}
+          <div className="flex space-x-4 mt-4">
+            {socialIcons.map(({ Icon, label }, idx) => (
+              <Icon
+                key={idx}
+                className="text-white hover:text-gray-200 cursor-pointer"
+                aria-label={label}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Links Sections */}
+        <div className="flex flex-1 flex-col md:flex-row md:justify-between gap-8 text-sm">
+          {footerLinks.map((section, index) => (
+            <div key={index} className="flex-1">
+              <h3 className="text-xl font-bold mb-4">{section.title}</h3>
+              <ul className="space-y-2 font-normal">
+                {section.links.map((link, i) => (
+                  <li key={i} className="hover:underline cursor-pointer">
+                    {link}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Contact Section */}
+        <div className="flex-1 text-sm">
+          <h2 className="text-xl font-bold mb-4">Contact Us</h2>
+          <div className="font-normal">
+            <p>
+              C/102-103, Ganesh Meridian, Opp. Kargil Petrol Pump, Ahmedabad,
+              Gujarat, INDIA
+            </p>
+            <p className="mt-2">+91-942-644-2424 | +91-972-674-8800</p>
+            <p className="mt-2">sales.vidyalaya@sapphiresolutions.net</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Bottom Section */}
+      <div>
+        <div className="border-1 m-2"></div>
+        {/* Copyright */}
+        <div className="text-center font-normal text-sm">
+          <p>© Vidyalaya 2025. All rights reserved.</p>
+          <p className="mt-1 hover:underline cursor-pointer">
+            Terms Of Use | Privacy Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
