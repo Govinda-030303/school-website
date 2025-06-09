@@ -16,6 +16,12 @@ const statisticsData = [
 
 const StatisticsSection = () => {
   return (
+    <div className="">
+      <div className="flex justify-center text-2xl pt-7">
+        <h1 className="text-orange-500">India's Most Trusted</h1>
+        <h1 className="text-blue-900">&nbsp;School Management Software</h1>
+      </div>
+
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center px-4 py-8">
       {statisticsData.map((stat, index) => (
         <StatisticsCard
@@ -26,6 +32,7 @@ const StatisticsSection = () => {
           hasPlus={stat.hasPlus !== false} // default true unless explicitly false
         />
       ))}
+    </div>
     </div>
   )
 }

@@ -115,13 +115,13 @@ const ReviewCarousel = () => {
       <div className="mt-6 flex space-x-4">
         <button
           onClick={prev}
-          className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600"
+          className="px-2 pb-2 bg-orange-500 text-white rounded-full hover:bg-orange-600"
         >
           ←
         </button>
         <button
           onClick={next}
-          className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600"
+          className="px-2 pb-2 bg-orange-500 text-white rounded-full hover:bg-orange-600"
         >
           →
         </button>
