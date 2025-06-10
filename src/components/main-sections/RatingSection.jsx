@@ -20,6 +20,21 @@ const ratingData = [
 const RatingSection = () => {
   return (
     <div className="bg-[#1e3567] py-10 px-4 md:px-16">
+      <div className="text-center px-4 py-10">
+        {/* Section Title */}
+        <p className="text-lg font-medium text-gray-100">Review</p>
+
+        {/* Main Heading */}
+        <h2 className="text-2xl md:text-3xl font-bold text-pink-400 mt-2">
+          School App, Parent App & Management App
+        </h2>
+
+        {/* Paragraph */}
+        <p className="mt-4 max-w-4xl mx-auto text-white text-base md:text-lg leading-relaxed">
+          Our <span className="font-semibold text-pink-300">school management Software</span> is applauded in the market by leading experts. Our customers from worldwide, bank on us showing 96% client retention! The market experts like Gartner Peer Insights, Capterra, Goodfirms, G2 Crow, Software Suggest, Technologycounter, have given us the highest ratings for the extraordinary features!
+        </p>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {ratingData.map((data, index) => (
           <RatingCard

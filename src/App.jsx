@@ -2,11 +2,13 @@ import SchoolCard from './components/card-type/SchoolCard'
 import Footer from './components/footer/Footer'
 import  HeroSection  from './components/HeroSection'
 import FeatureSection from './components/main-sections/FeatureSection'
+import GuideSection from './components/main-sections/GuideSection'
 import MobileStorySection from './components/main-sections/MobileStorySection'
 import RatingSection from './components/main-sections/RatingSection'
 import ReviewCarousel from './components/main-sections/ReviewCarousel'
 import StatisticsSection from './components/main-sections/StatisticsSection'
 import StorySection from './components/main-sections/StorySection'
+import WhatsappStorySection from './components/main-sections/WhatsappStorySection'
 import Navbar from './components/navbar/Navbar'
 
 const App = () => {
@@ -20,7 +22,9 @@ const App = () => {
       <StorySection/>
       <FeatureSection/>
       <MobileStorySection/>
+      <WhatsappStorySection/>
       <ReviewCarousel/>
+      <GuideSection/>
       <RatingSection/>
       <Footer/>
     </div>
