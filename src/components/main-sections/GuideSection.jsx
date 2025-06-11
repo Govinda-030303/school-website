@@ -23,7 +23,7 @@ const GuideSection = () => {
         {/* Text Content */}
         <div className="w-full md:w-1/2 text-left text-sm">
           <p className="text-gray-800 mb-4">
-            Are you looking out to bring the benefits of the latest technology for your school's growth and want to leverage its benefit to student's Education? Let the power of social media applications contribute to your success journey. We, the Vidyalaya, the leading school management system provider, introducing the new venture of WhatsApp for Education.
+            Are you looking out to bring the benefits of the latest technology for your school's growth and want to leverage its benefit to student's Education? Let the power of social media applications contribute to your success journey. We, the GurukulSarthi, the leading school management system provider, introducing the new venture of WhatsApp for Education.
           </p>
           <p className="text-gray-800 mb-4">
             When the marketplace becomes crowded with companies offering software suites with identical features, decision-makers must understand the unique features related to the product that performs in the longer term. When selecting a school management software provider, there are so many measures to look for and the same goes for the software features as well the school must ensure.

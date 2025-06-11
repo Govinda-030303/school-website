@@ -24,7 +24,7 @@ const WhatsappStorySection = () => {
         <div className="w-full md:w-1/2 text-justify">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">WhatsApp For Education</h2>
           <p className="text-gray-700 mb-4">
-            Are you looking out to bring the benefits of the latest technology for your school’s growth and want to leverage its benefit to student’s Education? Let the power of social media applications contribute to your success journey. We, the Vidyalaya, the leading school management system provider, introducing the new venture of WhatsApp for Education.
+            Are you looking out to bring the benefits of the latest technology for your school's growth and want to leverage its benefit to student's Education? Let the power of social media applications contribute to your success journey. We, the GurukulSarthi, the leading school management system provider, introducing the new venture of WhatsApp for Education.
           </p>
           <p className="text-gray-700 mb-6">
             The intervention of technology in the education industry is a must-to-have thing. Accomplish a 360 degrees makeover for your educational institute by joining hands with Apps of the new generation. Let the digitalization make you fit for a digital era by transforming your existing chalk and talk school management system. Establish the new round of communication with the parents by integrating the social media Apps like WhatsApp messenger for school!

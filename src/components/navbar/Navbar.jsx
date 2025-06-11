@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CTAButton from "../buttons/CTAButton";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "../../assets/logos/schoolLogo.png";
 
 const menuItems = [
   {
@@ -37,7 +38,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="text-lg font-bold">Logo</div>
+          <div className="text-lg font-bold"><img src={logo} alt="logo" className="w-20 h-20 object-contain scale-200" /></div>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-x-6 items-center font-medium text-gray-800 whitespace-nowrap">

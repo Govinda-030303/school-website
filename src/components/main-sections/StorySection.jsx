@@ -7,7 +7,7 @@ const StorySection = () => {
       {/* Title Section */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#FFA690]">
-          Why Vidyalaya School Management System
+          Why GurukulSarthi School Management System
         </h1>
         <p className="text-xl mt-2 font-medium">Is Most Preferred System In India?</p>
       </div>
@@ -19,7 +19,7 @@ const StorySection = () => {
           <h3 className="text-xl font-semibold">We have</h3>
           <h2 className="text-3xl font-bold text-[#FFA690]">Lot of Success Stories</h2>
           <p className="text-sm leading-6 text-gray-200">
-            Vidyalaya school management system software has redefined the education
+            GurukulSarthi school management system software has redefined the education
             system functionalities with help of the latest technologies and gained new
             heights with its extraordinary features! This successful school management
             system uses cutting–edge technology and makes it user-friendly yet affordable!

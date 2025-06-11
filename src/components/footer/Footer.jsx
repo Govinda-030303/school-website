@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import logo from "../../assets/logos/schoolLogo.png";
 
 const socialIcons = [
   { Icon: Facebook, label: "Facebook" },
@@ -12,8 +13,8 @@ const footerLinks = [
   {
     title: "About",
     links: [
-      "About Vidyalaya",
-      "Why Vidyalaya?",
+      "About GurukulSarthi",
+      "Why GurukulSarthi?",
       "Benefits",
       "Our Approach",
       "History",
@@ -42,9 +43,12 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between gap-8 px-4">
         {/* About Section */}
         <div className="flex-1 text-sm">
-          <h2 className="text-xl font-bold mb-4">Vidyalaya</h2>
+          <div className=" flex justify-center ">
+
+          <img src={logo} alt="logo" className="w-20 h-20 object-contain scale-200" />
+          </div>
           <p className="font-normal">
-            Vidyalaya is a leading ERP solution for educational institutions
+            GurukulSarthi is a leading ERP solution for educational institutions
             worldwide, offering SMS, online payment, vehicle tracking, online
             exams, mobile apps, biometric integration, and more.
           </p>
@@ -85,7 +89,7 @@ const Footer = () => {
               Gujarat, INDIA
             </p>
             <p className="mt-2">+91-942-644-2424 | +91-972-674-8800</p>
-            <p className="mt-2">sales.vidyalaya@sapphiresolutions.net</p>
+            <p className="mt-2">sales.gurukulsarthi@sapphiresolutions.net</p>
           </div>
         </div>
       </div>
@@ -95,7 +99,7 @@ const Footer = () => {
         <div className="border-1 m-2"></div>
         {/* Copyright */}
         <div className="text-center font-normal text-sm">
-          <p>© Vidyalaya 2025. All rights reserved.</p>
+          <p>© GurukulSarthi 2025. All rights reserved.</p>
           <p className="mt-1 hover:underline cursor-pointer">
             Terms Of Use | Privacy Policy
           </p>

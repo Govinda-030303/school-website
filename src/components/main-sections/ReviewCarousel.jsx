@@ -99,12 +99,12 @@ const ReviewCarousel = () => {
 
   {/* Main Heading */}
   <h2 class="text-2xl md:text-3xl font-bold mt-2 text-gray-900">
-    Why Should You <span class="text-orange-600">Choose Vidyalaya</span> School ERP?
+    Why Should You <span class="text-orange-600">Choose GurukulSarthi</span> School ERP?
   </h2>
 
   {/* Description Paragraph */}
   <p class="mt-4 max-w-4xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
-    Vidyalaya is a centralized platform with all the necessary tools for measuring, accessing, connecting, and coordinating learning processes. Vidyalaya is capable of handling every aspect of operating a school or college, including managing daily operational duties and fostering communication.
+    GurukulSarthi is a centralized platform with all the necessary tools for measuring, accessing, connecting, and coordinating learning processes. GurukulSarthi is capable of handling every aspect of operating a school or college, including managing daily operational duties and fostering communication.
   </p>
 </div>
 

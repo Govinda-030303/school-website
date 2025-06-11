@@ -30,7 +30,7 @@ const FeatureSection = () => {
 
       {/* Paragraph */}
       <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-        Vidyalaya software is a customized school management software that offers end-to-end solutions for every phase of school management like admissions, academic management, staff management, attendance.
+        GurukulSarthi software is a customized school management software that offers end-to-end solutions for every phase of school management like admissions, academic management, staff management, attendance.
         It is a one-stop solution platform that integrates various features like biometric, SMS, online portal, e-exam, mobile app, etc.
         Let our high-end product empower your educational institute in delivering new ways of education by taking care of administrative tasks!
       </p>
