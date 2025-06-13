@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Users, Database, Headphones, Globe } from 'lucide-react';
+import compatibleForAll from '../../assets/interactive-images/compatible_for_all.svg'
+import dataStorage from '../../assets/interactive-images/data_storage.svg'
+import corporativeService from '../../assets/interactive-images/corporative_service.svg'
+import moreAccessible from '../../assets/interactive-images/more_accessible.svg'
 
 const InteractiveFeaturesShowcase = () => {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -14,13 +18,7 @@ const InteractiveFeaturesShowcase = () => {
       image: (
         <div className="relative w-full h-full flex items-center justify-center">
           {/* Illustration */}
-          <div className="relative">
-            <div className="absolute -top-4 -left-8 w-32 h-6 bg-red-400 rounded-lg transform -rotate-12 shadow-lg"></div>
-            <div className="absolute -top-2 -left-4 w-32 h-6 bg-green-400 rounded-lg transform -rotate-6 shadow-lg"></div>
-            <div className="absolute top-0 left-0 w-32 h-6 bg-blue-400 rounded-lg shadow-lg"></div>
-            <div className="absolute top-2 left-4 w-32 h-6 bg-yellow-400 rounded-lg transform rotate-6 shadow-lg"></div>
-            <div className="absolute top-4 left-8 w-32 h-6 bg-purple-400 rounded-lg transform rotate-12 shadow-lg"></div>
-          </div>
+         <div className=""><img src={compatibleForAll} alt="" /></div>
         </div>
       ),
     },
@@ -32,14 +30,7 @@ const InteractiveFeaturesShowcase = () => {
       icon: <Database className="w-8 h-8 text-blue-600" />,
       image: (
         <div className="relative w-full h-full flex items-center justify-center">
-          <div className="w-16 h-32 bg-orange-400 rounded-lg shadow-lg">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div
-                key={i}
-                className="w-12 h-3 bg-orange-500 mx-2 mt-1 rounded-sm"
-              ></div>
-            ))}
-          </div>
+          <div className=""><img src={dataStorage} alt="" /></div>
         </div>
       ),
     },
@@ -51,17 +42,7 @@ const InteractiveFeaturesShowcase = () => {
       icon: <Headphones className="w-8 h-8 text-blue-600" />,
       image: (
         <div className="relative w-full h-full flex items-center justify-center">
-          <div className="flex space-x-4">
-            {[...Array(3)].map((_, i) => (
-              <div
-                key={i}
-                className="w-16 h-20 bg-yellow-300 rounded-t-full flex flex-col items-center"
-              >
-                <div className="w-8 h-8 bg-pink-400 rounded-full mt-2"></div>
-                <div className="w-12 h-8 bg-blue-500 rounded mt-2"></div>
-              </div>
-            ))}
-          </div>
+          <div className=""><img src={corporativeService} alt="" /></div>
         </div>
       ),
     },
@@ -73,9 +54,7 @@ const InteractiveFeaturesShowcase = () => {
       icon: <Globe className="w-8 h-8 text-blue-600" />,
       image: (
         <div className="relative w-full h-full flex items-center justify-center">
-          <div className="w-12 h-16 bg-yellow-300 rounded-t-full flex flex-col items-center">
-            <div className="w-6 h-6 bg-orange-400 rounded-full mt-1"></div>
-            <div className="w-8 h-8 bg-blue-500 rounded mt-1"></div>
+          <div className=""><img src={moreAccessible} alt="" />
           </div>
         </div>
       ),
@@ -123,14 +102,12 @@ const InteractiveFeaturesShowcase = () => {
         </div>
 
         {/* Right - Image */}
-        <div className="relative w-full h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem] bg-gradient-to-br from-pink-100 to-orange-100 rounded-2xl shadow-lg overflow-hidden">
+        <div className="relative w-full h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[30rem]  rounded-2xl overflow-hidden">
           <div className="w-full h-full transition duration-500 ease-in-out p-4">
             {features[activeFeature].image}
           </div>
           {/* Decorative Circles */}
-          <div className="absolute -top-5 -right-5 w-16 h-16 bg-pink-200 rounded-full opacity-40"></div>
-          <div className="absolute -bottom-5 -left-5 w-12 h-12 bg-orange-200 rounded-full opacity-40"></div>
-          <div className="absolute top-1/2 -left-2 w-8 h-8 bg-yellow-200 rounded-full opacity-40"></div>
+          
         </div>
       </div>
     </div>
