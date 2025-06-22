@@ -62,7 +62,7 @@ const InteractiveFeaturesShowcase = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8 bg-white min-h-screen">
+    <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8 bg-gradient-to-r from-[#F5F5DC] to-[#00A8AA] min-h-screen">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         {/* Left - Features */}
         <div className="space-y-5">
@@ -72,7 +72,7 @@ const InteractiveFeaturesShowcase = () => {
               onClick={() => setActiveFeature(index)}
               className={`p-5 sm:p-6 rounded-xl cursor-pointer transition-all duration-300 transform hover:scale-[1.03] border ${
                 activeFeature === index
-                  ? 'bg-orange-100 border-orange-400 shadow-md'
+                  ? 'bg-[#8eb2e5] border-[#4570ac] shadow-md'
                   : 'bg-gray-50 border-gray-200 hover:bg-gray-100'
               }`}
             >

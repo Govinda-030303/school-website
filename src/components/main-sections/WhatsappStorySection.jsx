@@ -3,7 +3,7 @@ import whatsappAnimation from '../../assets/othres/whatsappAnim.svg';
 
 const WhatsappStorySection = () => {
   return (
-    <div className="px-6 md:px-20 py-12 bg-white">
+    <div className="px-6 md:px-20 py-12 bg-gradient-to-r from-[#F5F5DC] to-[#00A8AA]">
       {/* Title Section */}
       <div className="text-center mb-10">
         <h2 className="text-xl font-semibold text-blue-900">Integration</h2>

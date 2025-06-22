@@ -83,7 +83,7 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   return (
-    <nav className="bg-gradient-to-r from-pink-50 via-orange-50 to-yellow-50 sticky top-0 z-50 shadow-sm border-b border-orange-100">
+    <nav className="bg-gradient-to-r from-[#F5F5DC] via-[#7CD9A1] to-[#47C970] sticky top-0 z-50 shadow-sm border-b border-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
           {/* Logo */}

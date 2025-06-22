@@ -75,7 +75,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full min-h-[90vh] bg-gradient-to-r from-orange-100 to-pink-100 flex items-center justify-center">
+    <div className="relative overflow-hidden w-full min-h-[90vh] bg-gradient-to-r from-[#F5F5DC] to-[#00A8AA] flex items-center justify-center">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}

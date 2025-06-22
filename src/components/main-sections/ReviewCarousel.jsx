@@ -90,65 +90,65 @@ const ReviewCarousel = () => {
   };
 
   return (
+    <div className="bg-gradient-to-r from-[#F5F5DC] to-[#00A8AA]">
+      <div class="text-center px-4 py-10">
+        {/* Top Subheading */}
+        <p class="text-lg font-medium text-gray-800">Let's Read</p>
 
-    <div className="">
+        {/* Main Heading */}
+        <h2 class="text-2xl md:text-3xl font-bold mt-2 text-gray-900">
+          Why Should You{" "}
+          <span class="text-orange-600">Choose GurukulSarthi</span> School ERP?
+        </h2>
 
-<div class="text-center px-4 py-10">
-  {/* Top Subheading */}
-  <p class="text-lg font-medium text-gray-800">Let's Read</p>
+        {/* Description Paragraph */}
+        <p class="mt-4 max-w-4xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
+          GurukulSarthi is a centralized platform with all the necessary tools
+          for measuring, accessing, connecting, and coordinating learning
+          processes. GurukulSarthi is capable of handling every aspect of
+          operating a school or college, including managing daily operational
+          duties and fostering communication.
+        </p>
+      </div>
 
-  {/* Main Heading */}
-  <h2 class="text-2xl md:text-3xl font-bold mt-2 text-gray-900">
-    Why Should You <span class="text-orange-600">Choose GurukulSarthi</span> School ERP?
-  </h2>
+      <div
+        className="flex flex-col items-center py-10"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div className="w-full max-w-6xl overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.4 }}
+              className="flex justify-center gap-6 flex-wrap"
+            >
+              {getVisibleCards().map((review, index) => (
+                <ReviewCard key={index} {...review} />
+              ))}
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
-  {/* Description Paragraph */}
-  <p class="mt-4 max-w-4xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
-    GurukulSarthi is a centralized platform with all the necessary tools for measuring, accessing, connecting, and coordinating learning processes. GurukulSarthi is capable of handling every aspect of operating a school or college, including managing daily operational duties and fostering communication.
-  </p>
-</div>
-
-
-    <div
-      className="flex flex-col items-center py-10"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
-      <div className="w-full max-w-6xl overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.4 }}
-            className="flex justify-center gap-6 flex-wrap"
+        <div className="mt-6 flex space-x-4">
+          <button
+            onClick={prev}
+            className="px-2 pb-2 text-orange-500 hover:text-orange-600 cursor-pointer"
           >
-            {getVisibleCards().map((review, index) => (
-              <ReviewCard key={index} {...review} />
-            ))}
-          </motion.div>
-        </AnimatePresence>
-      </div>
-
-      <div className="mt-6 flex space-x-4">
-        <button
-          onClick={prev}
-          className="px-2 pb-2 text-orange-500 hover:text-orange-600 cursor-pointer"
-        >
-          ←
-        </button>
-        <button
-          onClick={next}
-          className="px-2 pb-2 text-orange-500 hover:text-orange-600 cursor-pointer"
-        >
-          →
-        </button>
+            ←
+          </button>
+          <button
+            onClick={next}
+            className="px-2 pb-2 text-orange-500 hover:text-orange-600 cursor-pointer"
+          >
+            →
+          </button>
+        </div>
       </div>
     </div>
-
-    </div>
-
   );
 };
 

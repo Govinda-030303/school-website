@@ -15,7 +15,7 @@ import Navbar from './components/navbar/Navbar'
 
 const App = () => {
   return (
-    <div className='font-bold text-5xl m-1'>
+    <div className='font-bold text-5xl from-[#F5F5DC] to-[#00A8AA] rounded-3xl'>
       <Navbar/>
       <HeroSection/>
       <SchoolCard/>

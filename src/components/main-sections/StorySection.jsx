@@ -3,7 +3,8 @@ import teamImage from '../../assets/othres/teamImage.png'; // Replace with your 
 
 const StorySection = () => {
   return (
-    <div className="bg-[#1D3557] text-white px-6 md:px-20 py-16">
+    <div className="bg-gradient-to-r from-[#5066a4] to-[#3AB7BF]
+ text-white px-6 md:px-20 py-16">
       {/* Title Section */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#FFA690]">

@@ -3,7 +3,7 @@ import guideAnimation from '../../assets/othres/whatsappAnim.svg';
 
 const GuideSection = () => {
   return (
-    <div className="px-6 md:px-20 py-16 bg-white">
+    <div className="px-6 md:px-20 py-16 bg-gradient-to-r from-[#F5F5DC] to-[#00A8AA]">
       {/* Subtitle */}
       <div className="text-center mb-2 text-xl">
         <h2 className="text-2xl font-bold text-blue-900 mb-2">Get Free Guide</h2>

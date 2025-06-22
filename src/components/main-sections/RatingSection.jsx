@@ -19,7 +19,7 @@ const ratingData = [
 
 const RatingSection = () => {
   return (
-    <div className="bg-[#1e3567] py-10 px-4 md:px-16">
+    <div className="bg-gradient-to-r from-[#5066a4] to-[#2d7c81] py-10 px-4 md:px-16">
       <div className="text-center px-4 py-10">
         {/* Section Title */}
         <p className="text-lg font-medium text-gray-100">Review</p>

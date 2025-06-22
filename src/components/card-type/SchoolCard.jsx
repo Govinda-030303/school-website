@@ -35,7 +35,7 @@ const SchoolCarousel = () => {
   }, [controls])
 
   return (
-    <div className="overflow-hidden w-full max-w-6xl mx-auto">
+    <div className="overflow-hidden w-full max-w-6xl mx-auto ">
       <motion.div
         className="flex"
         animate={controls}
@@ -49,7 +49,7 @@ const SchoolCarousel = () => {
             key={index}
             className="w-[220px] h-[200px] flex-shrink-0 p-4 md:p-2"
           >
-            <div className="w-full h-full bg-white shadow-md rounded-xl overflow-hidden">
+            <div className="w-full h-full shadow-md rounded-xl overflow-hidden">
               <img
                 src={image}
                 alt={`school-${index}`}

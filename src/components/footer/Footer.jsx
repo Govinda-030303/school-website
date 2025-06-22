@@ -39,7 +39,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-500 text-white py-10">
+    <footer className="bg-gradient-to-r from-[#5066a4] to-[#3AB7BF] text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between gap-8 px-4">
         {/* About Section */}
         <div className="flex-1 text-sm">

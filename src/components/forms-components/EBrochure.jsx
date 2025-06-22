@@ -7,8 +7,8 @@ const EBrochure = () => {
   const [phone, setPhone] = React.useState("");
 
   return (
-    <div className="bg-[#dce9fd] flex justify-center items-center min-h-screen">
-      <div className="bg-[#dce9fd] max-w-5xl w-full rounded-[2.5rem] p-4 md:p-10 flex flex-col md:flex-row items-center shadow-md">
+    <div className="bg-gradient-to-r from-[#F5F5DC] to-[#00A8AA] flex justify-center items-center min-h-[50vh] py-5">
+      <div className="bg-[#4570ac] max-w-5xl w-full rounded-[2.5rem] p-4 md:p-10 flex flex-col md:flex-row items-center shadow-md">
         {/* Left Image */}
         <div className="w-full md:w-1/2 overflow-hidden rounded-[2.5rem]">
           <img

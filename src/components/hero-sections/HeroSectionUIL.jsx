@@ -10,7 +10,7 @@ const HeroSectionUIL = (props) => {
   const certImage = [r1, r2, r3, r4]
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-between items-center bg-gradient-to-br from-[#FFEFE3] to-[#FDF3E9] p-8 rounded-md">
+    <div className="flex flex-col-reverse lg:flex-row justify-between items-center  p-8 rounded-md">
       
       {/* Text Section */}
       <div className="w-full lg:w-1/2 space-y-1">

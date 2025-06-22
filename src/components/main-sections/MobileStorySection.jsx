@@ -5,7 +5,7 @@ import phoneImage from '../../assets/othres/phoneImage.png'; // First phone imag
 
 const MobileStorySection = () => {
   return (
-    <div className="bg-[#0F2C59] text-white py-16 px-6 md:px-20">
+    <div className="bg-gradient-to-r from-[#5066a4] to-[#3AB7BF] text-white py-16 px-6 md:px-20">
       {/* Product Tag Line */}
       <div className="text-center mb-8">
         <p className="text-lg font-semibold">Our Product</p>
